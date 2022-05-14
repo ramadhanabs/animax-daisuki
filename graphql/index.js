@@ -17,3 +17,22 @@ export const GET_ALL_ANIME = gql`
     }
   }
 `
+
+export const GET_DETAIL_ANIME = gql`
+  query GET_DETAIL_ANIME($mediaId: Int) {
+    Media(id: $mediaId) {
+      title {
+        english
+        native
+      }
+      bannerImage
+      coverImage {
+        large
+      }
+      description
+      genres
+      duration
+      averageScore
+    }
+  }
+`

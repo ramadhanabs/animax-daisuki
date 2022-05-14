@@ -59,9 +59,6 @@ export default function Home() {
             style={{ marginBottom: '16px' }}
           >
             <h1 style={{ marginBottom: 0 }}>Anime List</h1>
-            <Button>
-              <PlusOutlined /> Bulk Add
-            </Button>
           </Row>
           <Row>
             {media &&
